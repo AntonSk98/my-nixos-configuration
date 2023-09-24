@@ -76,7 +76,7 @@
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+   services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.ansk98 = {
@@ -84,12 +84,14 @@
     description = "Anton Skripin";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-	wget
-	google-chrome
-	pkgs.notepad-next
-	pkgs.vscodium
-	pkgs.jetbrains.idea-ultimate
-	git
+        wget
+        google-chrome
+        pkgs.notepad-next
+        pkgs.vscodium
+        pkgs.jetbrains.idea-ultimate
+        git
+        pkgs.gnome.gnome-tweaks
+        pkgs.gittyup
     ];
   };
 

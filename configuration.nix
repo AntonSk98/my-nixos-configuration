@@ -77,10 +77,9 @@
             wget
             pkgs.jetbrains.idea-ultimate
             git
-            pkgs.gittyup
             pkgs.parted
             pkgs.sysbench
-            pkgs.gitnuro
+            pkgs.temurin-jre-bin-17
         ];
     };
 
@@ -126,6 +125,8 @@
         intelBusId = "PCI:0:2:0";
         nvidiaBusId = "PCI:1:0:0";
     };
+
+    services.flatpak.enable = true;
 
     # This value determines the NixOS release from which the default
     # settings for stateful data, like file locations and database versions

@@ -80,6 +80,7 @@
             pkgs.gittyup
             pkgs.parted
             pkgs.sysbench
+            pkgs.gitnuro
         ];
     };
 
